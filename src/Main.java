@@ -42,18 +42,18 @@ public class Main {
                 minPayout = arr[index];
             }
         }
+        System.out.println();
         System.out.println("Минимальная сумма трат за день составила " + minPayout + " рублей");
     }
 
 
-
     public static void task3() {
         int[] arr = generateRandomArray();
-        double averagePayout = 0;
+        double sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            averagePayout += arr[i] / arr.length;
+            sum += arr[i];
         }
-
+        double averagePayout = sum / arr.length;
         System.out.println();
         System.out.println(" Средняя сумма трат за месяц составила " + averagePayout + " рублей ");
     }
